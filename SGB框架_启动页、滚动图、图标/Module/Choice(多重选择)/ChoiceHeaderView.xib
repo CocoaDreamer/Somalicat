@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Iu5-KM-NGM" customClass="ChoiceHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="363" height="65"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBV-jk-mdT">
+                    <rect key="frame" x="15" y="21" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="Xy6-En-hey"/>
+                        <constraint firstAttribute="width" constant="20" id="yeA-II-WPJ"/>
+                    </constraints>
+                    <state key="normal" image="deselect">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="select.png"/>
+                </button>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="jiantou" translatesAutoresizingMaskIntoConstraints="NO" id="zpV-E1-NQv">
+                    <rect key="frame" x="338" y="25" width="10" height="10"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="10" id="Acv-Y2-rd8"/>
+                        <constraint firstAttribute="height" constant="10" id="Dsa-T4-7JA"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OtS-IC-wbG">
+                    <rect key="frame" x="55" y="20" width="220" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="220" id="9Ca-Rp-JYS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="gBV-jk-mdT" secondAttribute="centerY" id="8ZO-Db-LSw"/>
+                <constraint firstAttribute="trailing" secondItem="zpV-E1-NQv" secondAttribute="trailing" constant="15" id="8hi-xJ-K6f"/>
+                <constraint firstItem="OtS-IC-wbG" firstAttribute="leading" secondItem="gBV-jk-mdT" secondAttribute="trailing" constant="20" id="I0o-R7-1hH"/>
+                <constraint firstItem="gBV-jk-mdT" firstAttribute="leading" secondItem="Iu5-KM-NGM" secondAttribute="leading" constant="15" id="K7h-7J-McW"/>
+                <constraint firstAttribute="centerY" secondItem="zpV-E1-NQv" secondAttribute="centerY" constant="1" id="TZO-JQ-ez8"/>
+                <constraint firstAttribute="centerY" secondItem="OtS-IC-wbG" secondAttribute="centerY" id="kyE-PC-hDR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="button_select" destination="gBV-jk-mdT" id="FgX-cL-G1P"/>
+                <outlet property="imageView_arrow" destination="zpV-E1-NQv" id="063-k8-bBT"/>
+                <outlet property="label_name" destination="OtS-IC-wbG" id="Lwy-PT-zuS"/>
+            </connections>
+            <point key="canvasLocation" x="587.5" y="50.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="deselect" width="20" height="20"/>
+        <image name="jiantou" width="11" height="20"/>
+        <image name="select.png" width="20" height="20"/>
+    </resources>
+</document>

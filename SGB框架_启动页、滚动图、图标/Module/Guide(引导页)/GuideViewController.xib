@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GuideViewController">
+            <connections>
+                <outlet property="guidePageControl" destination="hkh-4X-kwE" id="YFi-1n-jJd"/>
+                <outlet property="guideScrollView" destination="qiN-rb-C5Y" id="Lzw-wb-J5Z"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qiN-rb-C5Y">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                </scrollView>
+                <pageControl opaque="NO" contentMode="scaleToFill" restorationIdentifier="GuideViewController" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="hkh-4X-kwE">
+                    <rect key="frame" x="-19" y="-18" width="39" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="55" id="5ao-c9-8R3"/>
+                        <constraint firstAttribute="height" constant="37" id="dzE-di-X9X"/>
+                    </constraints>
+                    <color key="pageIndicatorTintColor" red="0.18005511199999999" green="1" blue="0.28030628860000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="5ao-c9-8R3"/>
+                            <exclude reference="dzE-di-X9X"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="5ao-c9-8R3"/>
+                            <include reference="dzE-di-X9X"/>
+                        </mask>
+                    </variation>
+                </pageControl>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="hkh-4X-kwE" secondAttribute="bottom" constant="17" id="4LF-iF-Iis"/>
+                <constraint firstAttribute="bottom" secondItem="qiN-rb-C5Y" secondAttribute="bottom" id="CbT-Zc-M8P"/>
+                <constraint firstAttribute="centerX" secondItem="qiN-rb-C5Y" secondAttribute="centerX" id="Gbx-3W-5AH"/>
+                <constraint firstAttribute="centerX" secondItem="qiN-rb-C5Y" secondAttribute="centerX" id="KK4-pL-glm"/>
+                <constraint firstAttribute="trailing" secondItem="qiN-rb-C5Y" secondAttribute="trailing" id="Wjz-lp-Fsn"/>
+                <constraint firstAttribute="centerY" secondItem="qiN-rb-C5Y" secondAttribute="centerY" id="mWd-Kq-EJQ"/>
+                <constraint firstItem="qiN-rb-C5Y" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rGf-vx-szx"/>
+                <constraint firstItem="qiN-rb-C5Y" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="xS6-e0-5OR"/>
+                <constraint firstAttribute="centerX" secondItem="hkh-4X-kwE" secondAttribute="centerX" id="ysT-BJ-tg0"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="qiN-rb-C5Y"/>
+                    <exclude reference="hkh-4X-kwE"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="4LF-iF-Iis"/>
+                    <exclude reference="ysT-BJ-tg0"/>
+                    <exclude reference="CbT-Zc-M8P"/>
+                    <exclude reference="Gbx-3W-5AH"/>
+                    <exclude reference="KK4-pL-glm"/>
+                    <exclude reference="Wjz-lp-Fsn"/>
+                    <exclude reference="mWd-Kq-EJQ"/>
+                    <exclude reference="rGf-vx-szx"/>
+                    <exclude reference="xS6-e0-5OR"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="qiN-rb-C5Y"/>
+                    <include reference="hkh-4X-kwE"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="4LF-iF-Iis"/>
+                    <include reference="ysT-BJ-tg0"/>
+                    <include reference="CbT-Zc-M8P"/>
+                    <include reference="Gbx-3W-5AH"/>
+                    <include reference="KK4-pL-glm"/>
+                    <include reference="Wjz-lp-Fsn"/>
+                    <include reference="mWd-Kq-EJQ"/>
+                    <include reference="rGf-vx-szx"/>
+                    <include reference="xS6-e0-5OR"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
